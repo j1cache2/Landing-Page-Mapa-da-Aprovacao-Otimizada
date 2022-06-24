@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Robotolight';
+    src: url(../fontes/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Robotoregular';
+    src: url(../fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Robotobold';
+    src: url(../fontes/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Oswaldsemibold';
+    src: url(../fontes/Oswald-SemiBold.ttf);
+}
+
+:root {
+    --cor0: #0178FF;
+    --cor1: #ffffff;
+    --cor2: #FFC400;
+    --cor3: #494949;
+    --cor4: #a1a1a1;
+    --cor5: #333333;
+    --cor6: #2d2d2d;
+    --cor7: #000;
+    --cor8: #609DEE;
+
+    --fonte-padrão: 'Arial, Verdana, Helvetica, sans-serif';
+    --fonte1: 'Robotoregular';
+    --fonte3: 'Robotolight';
+    --fonte5: 'Robotobold';
+    --fonte6: 'Oswaldsemibold';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red !important; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor7);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+body {
+    max-width: 1366px;
+    margin: auto;
+    background-color: black;
+}
+
+header .logo {
+    background-color: var(--cor0);
+    height: 160px;
+}
+
+header .logo img {
+    width: 360px;
+    display: block;
+    margin: auto;
+    padding: 31px 8px 0px 5px;
+}
+
+header .formulario {
+    background-color: var(--cor2);
+    padding: 8px 9px 46px 9px;
+}
+
+header .formulario h1 {
+    font-family: var(--fonte3);
+    font-size: 32px;
+    color: var(--cor3);
+    width: 100%;
+    max-width: 541px;
+    margin: auto;
+    padding: 0px 9px 39px 9px;
+    text-align: center;
+}
+
+header .formulario .nome,
+.email {
+    font-family: var(--fonte1);
+    font-size: 24px;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    width: 100%;
+    max-width: 318px;
+    height: 52px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 7px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+header .formulario .botao {
+    font-family: var(--fonte5);
+    font-size: 24px;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    padding: 11px 20px;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+    border: none;
+    border-radius: 7px;
+}
+
+header .formulario .botao:hover {
+    transform: scale(1.075);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+header .cronograma {
+    background-color: var(--cor0);
+    font-family: Arial;
+    font-size: 29px;
+    font-weight: bold;
+    color: var(--cor3);
+    text-align: center;
+    padding: 18px 9px 18px 9px;
+    line-height: 38px;
+}
+
+main .conteudo {
+    background-color: var(--cor1);
+    margin: auto;
+    padding: 33px 9px 35px 9px;
+}
+
+main .conteudo h2 {
+    font-family: var(--fonte6);
+    font-size: 37.7778px;
+    color: var(--cor5);
+    text-align: center;
+}
+
+main .conteudo .imgleg {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 65px auto 0px;
+    max-width: 1023px;
+}
+
+main .conteudo .imgleg p {
+    font-family: var(--fonte1);
+    font-size: 13px;
+    color: var(--cor6);
+    margin: 11px auto;
+}
+
+main .conteudo .div1 {
+    margin: auto;
+    max-width: 230px;
+    width: 100%;
+}
+
+main .conteudo .imgleg .div1 p {
+    max-width: 235px;
+}
+
+main .conteudo .div2 {
+    margin: auto;
+    margin-right: -16px;
+    max-width: 230px;
+    width: 100%;
+}
+
+main .conteudo .imgleg .div2 p {
+    max-width: 175px;
+}
+
+main .conteudo .div3 {
+    margin: auto;
+    max-width: 230px;
+    width: 100%;
+}
+
+main .conteudo .imgleg .div3 p {
+    max-width: 150px;
+}
+
+main .conteudo .div4 {
+    margin: auto;
+    max-width: 230px;
+    width: 100%;
+}
+
+main .conteudo .imgleg .div4 p {
+    max-width: 200px;
+}
+
+main .sobreoautor {
+    background-color: var(--cor8);
+    margin: auto;
+    padding: 48px 9px 48px 9px;
+}
+
+main .sobreoautor .conteinerprof {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    max-width: 919px;
+}
+
+main .sobreoautor .conteinerprof .textprof {
+    margin: auto;
+    margin-right: 78px;
+    margin-left: 0px;
+}
+
+main .sobreoautor .conteinerprof .textprof h3 {
+    font-family: var(--fonte6);
+    font-size: 31px;
+    color: var(--cor1);
+}
+
+main .sobreoautor .conteinerprof .textprof p {
+    font-family: var(--fonte1);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cor1);
+    max-width: 441px;
+    margin-top: 27px;
+}
+
+main .sobreoautor .conteinerprof .textprof p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main .sobreoautor .conteinerprof img {
+    width: 241px;
+}
+
+main .politicaetermos {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor7);
+    background-color: var(--cor1);
+    margin: auto;
+    padding: 51px 9px 51px 9px;
+    text-align: center;
+}
+
+main .politicaetermos .fline {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main .politicaetermos .fline p {
+    font-size: 17px;
+    font-weight: 900;
+    display: inline-block;
+    padding: 0px 15px 21px 15px;
+}
+
+main .politicaetermos p {
+    font-size: 13px;
+    font-weight: 400;
+    margin: auto;
+}
+
+main .politicaetermos p a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor7);
+    text-align: center;
+    font-family: var(--fonte5);
+    font-size: 14px;
+    height: 100%;
+    padding: 5px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+    main .conteudo {
+        padding: 33px 9px 9px 9px;
+        margin: auto;
+    }
+
+    main .conteudo h2 {
+        font-size: 28px;
+    }
+
+    main .conteudo .imgleg {
+        margin: 32px auto 0px;
+        max-width: 899px;
+        flex-wrap: wrap; 
+    }
+
+    main .conteudo .imgleg p {
+        font-size: 14px;
+    }
+
+    main .conteudo .div1 {
+        max-width: 300px;
+    }
+
+    main .conteudo .div2 {
+        max-width: 300px;
+    }
+
+    main .conteudo .imgleg .div2 p {
+        max-width: 200px;
+    }
+
+    main .conteudo .div3 {
+        margin: 30px auto 31px;
+        max-width: 300px;
+    }
+
+    main .conteudo .imgleg .div3 p {
+        max-width: 170px;
+    }
+
+    main .conteudo .div4 {
+        margin: 30px auto 31px;
+        max-width: 300px;
+    }
+
+    main .conteudo .imgleg .div4 p {
+        max-width: 210px;
+    }
+
+    main .sobreoautor {
+        padding: 28px 9px 28px 9px;
+    }
+
+    main .sobreoautor .conteinerprof {
+        flex-direction: column-reverse;
+    }
+
+    main .sobreoautor .conteinerprof .textprof {
+        text-align: center;
+    }
+
+    main .sobreoautor .conteinerprof .textprof h3 {
+        margin-top: 27px;
+    }
+
+    main .sobreoautor .conteinerprof .textprof p {
+        margin-top: 17px;
+    }
+
+    main .sobreoautor .conteinerprof img {
+        margin: auto;
+        width: 241px;
+    }
+}
+
+@media (max-width: 767px) {
+    main .conteudo {
+        padding: 33px 9px 16px 9px;
+    }
+
+    main .conteudo h2 {
+        font-family: var(--fonte6);
+        font-size: 28px;
+        color: var(--cor5);
+        text-align: center;
+    }
+
+    main .conteudo .imgleg {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 32px auto 0px;
+        max-width: 899px;
+    }
+
+    main .conteudo .imgleg p {
+        font-family: var(--fonte1);
+        font-size: 14px;
+        color: var(--cor6);
+        margin: 18px auto;
+    }
+
+    main .conteudo .div1 {
+        margin: auto;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    main .conteudo .imgleg .div1 p {
+        max-width: 235px;
+    }
+
+    main .conteudo .div2 {
+        margin: auto;
+        margin-top: 15px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    main .conteudo .imgleg .div2 p {
+        max-width: 200px;
+    }
+
+    main .conteudo .div3 {
+        margin: 15px auto 0px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    main .conteudo .imgleg .div3 p {
+        max-width: 170px;
+    }
+
+    main .conteudo .div4 {
+        margin: 15px auto 14px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    main .conteudo .imgleg .div4 p {
+        max-width: 210px;
+    }
+}
+
+@media (max-width: 539px) {
+    header .logo {
+        height: 120px;
+    }
+
+    header .logo img {
+        width: 310px;
+        padding: 22.5px 0px 0px 5px;
+    }
+
+    header .formulario {
+        padding: 8px 9px 46px 9px;
+    }
+
+    header .formulario h1 {
+        font-family: var(--fonte3);
+        font-size: 32px;
+        line-height: 34px;
+        color: var(--cor3);
+        width: 100%;
+        max-width: 541px;
+        margin: auto;
+        padding: 0px 0px 15px 0px;
+        text-align: center;
+    }
+
+    main .politicaetermos {
+        padding: 15px 9px 20px 9px;
+    }
+
+    main .politicaetermos .fline {
+        max-width: 300px;
+    }
+
+    main .politicaetermos .fline p {
+        font-size: 15px;
+        padding: 10px 0px 10px 0px;
+    }
+}
